@@ -1,7 +1,7 @@
-package oop.ex6.main.validation;
+package main.validation;
 
-import oop.ex6.main.sJavaDataTypes.SJavaMethod;
-import oop.ex6.main.sJavaDataTypes.SJavaVariable;
+import main.sJavaDataTypes.SJavaMethod;
+import main.sJavaDataTypes.SJavaVariable;
 
 import java.util.*;
 
