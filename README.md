@@ -1,7 +1,7 @@
 # Simplified-Java-Verifier
 A verifier tool, able to verify the validity of a Java code, with simplified syntax
 
-=      File description     =
+### =      File description     =
 
 package main contains:
 
@@ -67,7 +67,7 @@ package main contains:
         VariableDeclarationValidator.java - Responsible for validating and extracting data from Variable
             Declaration lines
 
-=  Design & Implementation  =
+### =  Design & Implementation  =
 
 When designing and implementing this project, our main principle was to be able to create a code that is as
 modular and expandable as possible, yet requires minimal existing code tampering to be expanded.
@@ -100,7 +100,7 @@ of the code.
 to effectively and efficiently handle and iterate all the different types and data, we've used a variety
 of data structures accordingly (Vectors, Linked Lists & Array Lists).
 
-=           Tests           =
+### =           Tests           =
 
 The following are tests which were made to proove the validity of our code:
 
