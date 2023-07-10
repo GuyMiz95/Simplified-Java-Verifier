@@ -1,4 +1,4 @@
-package oop.ex6.main.sJavaDataTypes;
+package main.sJavaDataTypes;
 
 import java.util.*;
 
