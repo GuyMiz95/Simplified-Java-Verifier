@@ -1,4 +1,4 @@
-package oop.ex6.main.scopeLogic;
+package main.scopeLogic;
 
 import oop.ex6.main.sJavaDataTypes.SJavaMethod;
 import oop.ex6.main.sJavaDataTypes.SJavaVariable;
