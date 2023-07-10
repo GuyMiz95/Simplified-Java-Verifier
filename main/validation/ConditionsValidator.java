@@ -1,4 +1,4 @@
-package oop.ex6.main.validation;
+package main.validation;
 
 import java.util.Vector;
 import java.util.regex.Matcher;
