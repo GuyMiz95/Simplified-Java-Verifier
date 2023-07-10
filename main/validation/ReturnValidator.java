@@ -1,4 +1,4 @@
-package oop.ex6.main.validation;
+package main.validation;
 
 /**
  * Represents a return keyword validator.
