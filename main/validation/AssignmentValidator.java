@@ -1,4 +1,4 @@
-package oop.ex6.main.validation;
+package main.validation;
 
 import oop.ex6.main.sJavaDataTypes.SJavaVariable;
 
