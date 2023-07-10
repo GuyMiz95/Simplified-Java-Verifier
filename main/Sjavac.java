@@ -1,7 +1,7 @@
-package oop.ex6.main;
+package main;
 
-import oop.ex6.main.scopeLogic.*;
-import oop.ex6.main.validation.SyntaxException;
+import main.scopeLogic.*;
+import main.validation.SyntaxException;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
