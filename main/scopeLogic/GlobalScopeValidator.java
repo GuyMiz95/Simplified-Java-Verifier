@@ -1,8 +1,8 @@
 package main.scopeLogic;
 
-import oop.ex6.main.sJavaDataTypes.SJavaMethod;
-import oop.ex6.main.sJavaDataTypes.SJavaVariable;
-import oop.ex6.main.validation.*;
+import main.sJavaDataTypes.SJavaMethod;
+import main.sJavaDataTypes.SJavaVariable;
+import main.validation.*;
 
 import java.util.*;
 
