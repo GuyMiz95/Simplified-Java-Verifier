@@ -1,6 +1,6 @@
-package oop.ex6.main.validation;
+package main.validation;
 
-import oop.ex6.main.sJavaDataTypes.SJavaVariable;
+import main.sJavaDataTypes.SJavaVariable;
 
 import java.util.HashMap;
 import java.util.regex.Matcher;
