@@ -1,4 +1,4 @@
-package oop.ex6.main.validation;
+package main.validation;
 
 /**
  * Represents an exception thrown when an S-java file has a syntax related error
