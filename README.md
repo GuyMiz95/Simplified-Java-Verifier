@@ -3,7 +3,7 @@ A verifier tool, able to verify the validity of a Java code, with simplified syn
 
 =      File description     =
 
-package oop.ex6.main contains:
+package main contains:
 
     Sjavac.java - Class responsible for the general running of the Compilation checking
         process of the provided SJava file.
