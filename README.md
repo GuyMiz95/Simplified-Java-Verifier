@@ -1,51 +1,74 @@
 # Simplified-Java-Verifier
 A verifier tool, able to verify the validity of a Java code, with simplified syntax
 
-package oop.ex6.main:
+=      File description     =
+
+package oop.ex6.main contains:
+
     Sjavac.java - Class responsible for the general running of the Compilation checking
-        process of the provided SJava file
-        
+        process of the provided SJava file.
+		
     package scopeLogic:
-        ConditionalException.java - Exception thrown for invalid conditionals
+        ConditionalException.java - Exception thrown for invalid conditionals.
+		
         GlobalScopeValidator.java - Class responsible for validating the compilability of the Global
-            Scope of the provided SJava file
+            Scope of the provided SJava file.
+			
         LocalScopeValidator.java - Class responsible for validating the compilability of the Local
-            Scopes of the provided SJava file
+            Scopes of the provided SJava file.
+			
         MemoryCollector.java - Class responsible for the collection of the various data in the compiler
             scopes for checking the various possible compilation problems.
-        MethodDefinitionException.java - Exception thrown for invalid Method calls and declarations
-        ReturnException.java - Exception thrown for invalid returns
-        VariableAssignmentException.java - Exception thrown for invalid Variable assignments
-        VariableDeclarationException.java - Exception thrown for invalid Variable declarations
+			
+        MethodDefinitionException.java - Exception thrown for invalid Method calls and declarations.
+		
+        ReturnException.java - Exception thrown for invalid returns.
+		
+        VariableAssignmentException.java - Exception thrown for invalid Variable assignments.
+		
+        VariableDeclarationException.java - Exception thrown for invalid Variable declarations.
+		
     package sJavaDataTypes:
-        SJavaMethod.java - Class representing a Method under the SJava specifications
+        SJavaMethod.java - Class representing a Method under the SJava specifications.
+		
         SJavaVariable.java - Represents a single variable, contains all the required metadata.
+		
     package validation:
         AssignmentValidator.java - Abstract class which represents all the validators relevant to assignment
             of values, to both methods and variables.
+			
         CommentValidator.java - Represents a comment validator - checking if given line has a comment in it.
+		
         ConditionsValidator.java - Represents condition validator, validates whether there's any condition
             (if\else\while) in given line.
+			
         EmptyLineValidator.java - Represents an empty line validator, validates whether there's an empty line.
+		
         EndOfBlockValidator.java - Represents an end-of-block validator, validates whether
             there's an end-of-block in given line.
+			
         EndOfLineValidator.java - Represents an end-of-line validator, validates whether there's an
             end-of-line in given line.
+			
         MethodCallValidator.java - Represents a method call validator, validates whether there's a method
             call in given line.
+			
         MethodDefinitionValidator.java - Represents a method definition validator, validates whether
             there's a method definition in given line.
+			
         ReturnValidator.java - Represents a return keyword validator.
+		
         Validator.java - An interface which represents a validator, an object capable of validating a
             unique pattern in given line.
+			
         VariableAssignmentValidator.java - Responsible for validating and extracting data from Variable
-            Assignment lines
+            Assignment lines.
+			
         VariableDeclarationValidator.java - Responsible for validating and extracting data from Variable
             Declaration lines
 
-=============================
 =  Design & Implementation  =
-=============================
+
 When designing and implementing this project, our main principle was to be able to create a code that is as
 modular and expandable as possible, yet requires minimal existing code tampering to be expanded.
 To make that happen, we've decided to split the project's task into 2 main tasks:
@@ -77,28 +100,46 @@ of the code.
 to effectively and efficiently handle and iterate all the different types and data, we've used a variety
 of data structures accordingly (Vectors, Linked Lists & Array Lists).
 
-=============================
 =           Tests           =
-=============================
-  The following are tests which were made to proove the validity of our code:
-  
-testFinalVarDeclaration.sjava - tests all final declaration of all types.
-testGlobalVarReAssignment.sjava - tests the re-assignment of a global variable.
-testIndentationProof.sjava - tests a valid piece of code that has indentation.
-testIfWhileConditions.sjava - tests a valid code which includes many if and while blocks.
-testInnerFunction.sjava - tests an inner function definition.
-testInvalidBrackets.sjava - tests an invalid code with un-matching amount of opening and closing brackets.
-testInvalidCommentType.sjava - tests an invalid type of comment.
-testInvalidConditionSyntax.sjava - tests an invalid condition syntax.
-testInvalidCondType.sjava - tests an invalid condition type.
-testInvalidIfConditions.sjava - tests invalid if condition structure.
-testInvalidMethodParam.sjava - tests an invalid method param at definition.
-testInvalidParamsAtCall.sjava - tests an invalid method param at method call.
-testInvalidParamType.sjava - tests an invalid type of parameter usage in function call.
-testInvalidReturnSyntax.sjava - tests an invalid return syntax.
-testInvalidTypeAssignment.sjava - tests an invalid type re-assignment.
-testInvalidVarDeclarationSyntax.sjava - tests an invalid variable declaration and assignment.
-testInvalidVarName.sjava - tests an invalid variable name given.
-testMultiVarDeclaration.sjava - tests a single-line multi-variable declaration.
-testVarDeclarationSpacing.sjava - tests a valid, yet very spaced code.
-testVarDeclarationTwice.sjava - tests a declaration of same variable twice in code.
+
+The following are tests which were made to proove the validity of our code:
+
+	testFinalVarDeclaration.sjava - tests all final declaration of all types.
+ 
+	testGlobalVarReAssignment.sjava - tests the re-assignment of a global variable.
+ 
+	testIndentationProof.sjava - tests a valid piece of code that has indentation.
+ 
+	testIfWhileConditions.sjava - tests a valid code which includes many if and while blocks.
+ 
+	testInnerFunction.sjava - tests an inner function definition.
+ 
+	testInvalidBrackets.sjava - tests an invalid code with un-matching amount of opening and closing brackets.
+ 
+	testInvalidCommentType.sjava - tests an invalid type of comment.
+ 
+	testInvalidConditionSyntax.sjava - tests an invalid condition syntax.
+ 
+	testInvalidCondType.sjava - tests an invalid condition type.
+ 
+	testInvalidIfConditions.sjava - tests invalid if condition structure.
+ 
+	testInvalidMethodParam.sjava - tests an invalid method param at definition.
+ 
+	testInvalidParamsAtCall.sjava - tests an invalid method param at method call.
+ 
+	testInvalidParamType.sjava - tests an invalid type of parameter usage in function call.
+ 
+	testInvalidReturnSyntax.sjava - tests an invalid return syntax.
+ 
+	testInvalidTypeAssignment.sjava - tests an invalid type re-assignment.
+ 
+	testInvalidVarDeclarationSyntax.sjava - tests an invalid variable declaration and assignment.
+ 
+	testInvalidVarName.sjava - tests an invalid variable name given.
+ 
+	testMultiVarDeclaration.sjava - tests a single-line multi-variable declaration.
+ 
+	testVarDeclarationSpacing.sjava - tests a valid, yet very spaced code.
+ 
+	testVarDeclarationTwice.sjava - tests a declaration of same variable twice in code.
