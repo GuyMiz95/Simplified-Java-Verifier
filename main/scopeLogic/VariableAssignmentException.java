@@ -1,4 +1,4 @@
-package oop.ex6.main.scopeLogic;
+package main.scopeLogic;
 
 /**
  * Exception thrown for invalid Variable assignments
