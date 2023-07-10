@@ -1,6 +1,6 @@
 package main.validation;
 
-import oop.ex6.main.sJavaDataTypes.SJavaVariable;
+import main.sJavaDataTypes.SJavaVariable;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
