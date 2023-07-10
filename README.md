@@ -1,10 +1,10 @@
 # Simplified-Java-Verifier
 A verifier tool, able to verify the validity of a Java code, with simplified syntax
 
-
 package oop.ex6.main:
     Sjavac.java - Class responsible for the general running of the Compilation checking
         process of the provided SJava file
+        
     package scopeLogic:
         ConditionalException.java - Exception thrown for invalid conditionals
         GlobalScopeValidator.java - Class responsible for validating the compilability of the Global
